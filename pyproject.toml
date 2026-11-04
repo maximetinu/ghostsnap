@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ghostsnap"
+version = "0.1.0"
+description = "Save and restore Ghostty windows, tabs and Claude Code / Codex sessions on macOS"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Metinu" }]
+keywords = ["ghostty", "terminal", "session", "claude-code", "codex", "macos"]
+classifiers = [
+  "Environment :: Console",
+  "Environment :: MacOS X",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS",
+  "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/maximetinu/ghostsnap"
+
+[project.scripts]
+ghostsnap = "ghostsnap:main"
+
+[tool.setuptools]
+py-modules = ["ghostsnap"]
